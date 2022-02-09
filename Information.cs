@@ -9,19 +9,19 @@ namespace OOP_in_C_ {
     public string theme;
     public string path;
 
-    public Information(string _name, string _author, string[] _keywords, string _theme, string _path) {
-      setValues(_name, _author, _keywords, _theme, _path);
+    public Information(string name, string author, string[] keywords, string theme, string path) {
+      this.setValues(name, author, keywords, theme, path);
     }
 
-    public Information(string _name) =>name = _name;
+    public Information(string name) => this.name = name;
     public Information() {}
 
-    public void setValues(string _name, string _author, string[] _keywords, string _theme, string _path) {
-      name = _name;
-      author = _author;
-      keywords = _keywords;
-      theme = _theme;
-      path = _path;
+    public void setValues(string name, string author, string[] keywords, string theme, string path) {
+      this.name = name;
+      this.author = author;
+      this.keywords = keywords;
+      this.theme = theme;
+      this.path = path;
 
     }
 
@@ -39,12 +39,12 @@ namespace OOP_in_C_ {
 
       Console.Write("Имя: ");
       Console.ForegroundColor = ConsoleColor.Red;
-      Console.WriteLine(name);
+      Console.WriteLine(this.name);
 
       Console.ResetColor();
       Console.Write("Автор: ");
       Console.ForegroundColor = ConsoleColor.Red;
-      Console.WriteLine(author);
+      Console.WriteLine(this.author);
 
       Console.ResetColor();
       Console.Write("Ключевые слова:");
@@ -54,12 +54,12 @@ namespace OOP_in_C_ {
       Console.ResetColor();
       Console.Write("Тематика: ");
       Console.ForegroundColor = ConsoleColor.Red;
-      Console.WriteLine(theme);
+      Console.WriteLine(this.theme);
 
       Console.ResetColor();
       Console.Write("Путь к файлу: ");
       Console.ForegroundColor = ConsoleColor.Red;
-      Console.WriteLine(path);
+      Console.WriteLine(this.path);
       Console.ResetColor();
 
     }
