@@ -13,6 +13,7 @@ namespace OOP_in_C_ {
       setValues(_name, _author, _keywords, _theme, _path);
     }
 
+    public Information(string _name) =>name = _name;
     public Information() {}
 
     public void setValues(string _name, string _author, string[] _keywords, string _theme, string _path) {
