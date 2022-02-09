@@ -1,0 +1,16 @@
+D:\Nasibullo\OOP-in-C-\bin\Debug\net5.0\OOP-in-C-.exe
+D:\Nasibullo\OOP-in-C-\bin\Debug\net5.0\OOP-in-C-.deps.json
+D:\Nasibullo\OOP-in-C-\bin\Debug\net5.0\OOP-in-C-.runtimeconfig.json
+D:\Nasibullo\OOP-in-C-\bin\Debug\net5.0\OOP-in-C-.runtimeconfig.dev.json
+D:\Nasibullo\OOP-in-C-\bin\Debug\net5.0\OOP-in-C-.dll
+D:\Nasibullo\OOP-in-C-\bin\Debug\net5.0\ref\OOP-in-C-.dll
+D:\Nasibullo\OOP-in-C-\bin\Debug\net5.0\OOP-in-C-.pdb
+D:\Nasibullo\OOP-in-C-\obj\Debug\net5.0\OOP-in-C-.csproj.AssemblyReference.cache
+D:\Nasibullo\OOP-in-C-\obj\Debug\net5.0\OOP-in-C-.GeneratedMSBuildEditorConfig.editorconfig
+D:\Nasibullo\OOP-in-C-\obj\Debug\net5.0\OOP-in-C-.AssemblyInfoInputs.cache
+D:\Nasibullo\OOP-in-C-\obj\Debug\net5.0\OOP-in-C-.AssemblyInfo.cs
+D:\Nasibullo\OOP-in-C-\obj\Debug\net5.0\OOP-in-C-.csproj.CoreCompileInputs.cache
+D:\Nasibullo\OOP-in-C-\obj\Debug\net5.0\OOP-in-C-.dll
+D:\Nasibullo\OOP-in-C-\obj\Debug\net5.0\ref\OOP-in-C-.dll
+D:\Nasibullo\OOP-in-C-\obj\Debug\net5.0\OOP-in-C-.pdb
+D:\Nasibullo\OOP-in-C-\obj\Debug\net5.0\OOP-in-C-.genruntimeconfig.cache
