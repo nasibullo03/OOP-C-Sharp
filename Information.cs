@@ -1,71 +1,37 @@
 using System;
 
-namespace OOP_in_C_ {
-    class Information {
+namespace OOP_in_C_
+{
+    class Information
+    {
+        public string Name { get; set; }
+        public string Author { get; set; }
+        public string[] Keywords { get; set; }
+        public string Theme { get; set; }
+        public string Path { get; set; }
 
-        private string name;
-        private string author;
-        private string[] keywords;
-        private string theme;
-        private string path;
-
-        //добавляем аксессоры «get» и «set»
-        public string Name {
-            get {
-                return this.name;
-            }
-            set {
-                this.name = value;
-            }
-        }
-        public string Author {
-            get {
-                return this.author;
-            }
-            set {
-                this.author = value;
-            }
-        }
-        public string[] Keywords {
-            get {
-                return this.keywords;
-            }
-            set {
-                this.keywords = value;
-            }
-        }
-        public string Theme {
-            get {
-                return this.theme;
-            }
-            set {
-                this.theme = value;
-            }
-        }
-        public string Path {
-            get {
-                return this.path;
-            }
-            set {
-                this.path = value;
-            }
+        public Information(string Name, string Author, string[] Keywords, string Theme, string Path)
+        {
+            this.SetValues(Name, Author, Keywords, Theme, Path);
         }
 
-        public Information(string name, string author, string[] keywords, string theme, string path) {
-            this.setValues(name, author, keywords, theme, path);
+        public Information(string Name) => this.Name = Name;
+
+        public Information() { }
+
+        public void SetValues(
+            string Name,
+            string Author,
+            string[] Keywords,
+            string Theme,
+            string Path
+        )
+        {
+            this.Name = Name;
+            this.Author = Author;
+            this.Keywords = Keywords;
+            this.Theme = Theme;
+            this.Path = Path;
         }
-
-        public Information(string name) => this.name = name;
-        public Information() {}
-
-        public void setValues(string name, string author, string[] keywords, string theme, string path) {
-            this.name = name;
-            this.author = author;
-            this.keywords = keywords;
-            this.theme = theme;
-            this.path = path;
-
-        }
-
     }
 }

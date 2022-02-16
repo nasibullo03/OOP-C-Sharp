@@ -1,49 +1,64 @@
 using System;
 
-namespace OOP_in_C_ {
-    class Excell: Information {
-        public string DateOfCreation {
-            get;
-            set;
-        }
-        public string DateOfChange {
-            get;
-            set;
-        }
-        public string Size {
-            get;
-            set;
-        }
-        public string Password {
-            get;
-            set;
-        }
+namespace OOP_in_C_
+{
+    class Excell : Information
+    {
+        public string DateOfCreation { get; set; }
 
-        public Excell() {}
-        public Excell(string name, string author, string[] keywords, string theme, string path, string DateOfCreation, string DateOfChange, string Size, string Password): base(name, author, keywords, theme, path) {
+        public string DateOfChange { get; set; }
+
+        public string Size { get; set; }
+
+        public string Password { get; set; }
+
+        public Excell() { }
+
+        public Excell(
+            string Name,
+            string Author,
+            string[] Keywords,
+            string Theme,
+            string Path,
+            string DateOfCreation,
+            string DateOfChange,
+            string Size,
+            string Password
+        ) : base(Name, Author, Keywords, Theme, Path)
+        {
             this.DateOfCreation = DateOfCreation;
             this.DateOfChange = DateOfChange;
             this.Size = Size;
             this.Password = Password;
         }
-        public Excell(string name, string author, string[] keywords, string theme, string path): base(name, author, keywords, theme, path) {}
-        public Excell(string name): base(name) {}
-        private void Print(string parameter, string parameterValue) {
+
+        public Excell(string Name, string Author, string[] Keywords, string Theme, string Path)
+            : base(Name, Author, Keywords, Theme, Path) { }
+
+        public Excell(string Name) : base(Name) { }
+
+        private void Print(string Parameter, string ParameterValue)
+        {
             Console.ResetColor();
-            Console.Write(parameter);
+            Console.Write(Parameter);
             Console.ForegroundColor = ConsoleColor.Red;
-            Console.WriteLine(parameterValue);
+            Console.WriteLine(ParameterValue);
         }
-        public void printValues() {
-            string parameterValue = "";
 
-            foreach(string el in base.Keywords) {
-                if (parameterValue == "") {
-                    parameterValue = el;
-                } else {
-                    parameterValue += ", " + el;
+        public void printValues()
+        {
+            string ParameterValue = "";
+
+            foreach (string el in base.Keywords)
+            {
+                if (ParameterValue == "")
+                {
+                    ParameterValue = el;
                 }
-
+                else
+                {
+                    ParameterValue += ", " + el;
+                }
             }
             Console.BackgroundColor = ConsoleColor.White;
             Console.ForegroundColor = ConsoleColor.Black;
@@ -53,47 +68,58 @@ namespace OOP_in_C_ {
 
             Print("Имя: ", base.Name);
             Print("Автор: ", base.Author);
-            Print("Ключевые слова: ", parameterValue);
+            Print("Ключевые слова: ", ParameterValue);
             Print("Тематика: ", base.Theme);
             Print("Путь к файлу: ", base.Path);
-            parameterValue = "";
+            ParameterValue = "";
 
-            if (this.DateOfCreation == "") {
-                parameterValue = "Не определен!";
-            } else {
-                parameterValue = this.DateOfCreation;
+            if (this.DateOfCreation == "")
+            {
+                ParameterValue = "Не определен!";
+            }
+            else
+            {
+                ParameterValue = this.DateOfCreation;
             }
 
-            Print("Дата создания: ", parameterValue);
-            parameterValue = "";
+            Print("Дата создания: ", ParameterValue);
+            ParameterValue = "";
 
-            if (this.DateOfChange == "") {
-                parameterValue = "Не определен!";
-            } else {
-                parameterValue = this.DateOfChange;
+            if (this.DateOfChange == "")
+            {
+                ParameterValue = "Не определен!";
+            }
+            else
+            {
+                ParameterValue = this.DateOfChange;
             }
 
-            Print("Дата изменения: ", parameterValue);
-            parameterValue = "";
+            Print("Дата изменения: ", ParameterValue);
+            ParameterValue = "";
 
-            if (this.Size == "") {
-                parameterValue = "Не определен!";
-            } else {
-                parameterValue = this.Size;
+            if (this.Size == "")
+            {
+                ParameterValue = "Не определен!";
             }
-            Print("Размер файла: ", parameterValue);
-            parameterValue = "";
+            else
+            {
+                ParameterValue = this.Size;
+            }
+            Print("Размер файла: ", ParameterValue);
+            ParameterValue = "";
 
-            if (this.Password == "") {
-                parameterValue = "Не существует!";
-            } else {
-                parameterValue = this.Password;
+            if (this.Password == "")
+            {
+                ParameterValue = "Не существует!";
+            }
+            else
+            {
+                ParameterValue = this.Password;
             }
 
-            Print("Пароль: ", parameterValue);
+            Print("Пароль: ", ParameterValue);
 
             Console.ResetColor();
-
         }
     }
 }
