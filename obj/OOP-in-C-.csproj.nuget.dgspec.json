@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "d:\\Nasibullo\\OOP-in-C-\\OOP-in-C-.csproj": {}
+    "D:\\Nasibullo\\OOP-in-C-\\OOP-in-C-.csproj": {}
   },
   "projects": {
-    "d:\\Nasibullo\\OOP-in-C-\\OOP-in-C-.csproj": {
+    "D:\\Nasibullo\\OOP-in-C-\\OOP-in-C-.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "d:\\Nasibullo\\OOP-in-C-\\OOP-in-C-.csproj",
+        "projectUniqueName": "D:\\Nasibullo\\OOP-in-C-\\OOP-in-C-.csproj",
         "projectName": "OOP-in-C-",
-        "projectPath": "d:\\Nasibullo\\OOP-in-C-\\OOP-in-C-.csproj",
+        "projectPath": "D:\\Nasibullo\\OOP-in-C-\\OOP-in-C-.csproj",
         "packagesPath": "C:\\Users\\admin\\.nuget\\packages\\",
-        "outputPath": "d:\\Nasibullo\\OOP-in-C-\\obj\\",
+        "outputPath": "D:\\Nasibullo\\OOP-in-C-\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\admin\\AppData\\Roaming\\NuGet\\NuGet.Config"
