@@ -33,41 +33,15 @@ namespace OOP_in_C_
 
         public HTML(string Name) : base(Name) { }
 
-        private void Print(string Parameter, string ParameterValue)
-        {
-            Console.ResetColor();
-            Console.Write(Parameter);
-            Console.ForegroundColor = ConsoleColor.Red;
-            Console.WriteLine(ParameterValue);
-        }
-
-        public void printValues()
+        public override void PrintValues()
         {
             string ParameterValue = "";
 
-            foreach (string el in base.Keywords)
-            {
-                if (ParameterValue == "")
-                {
-                    ParameterValue = el;
-                }
-                else
-                {
-                    ParameterValue += ", " + el;
-                }
-            }
             Console.BackgroundColor = ConsoleColor.White;
             Console.ForegroundColor = ConsoleColor.Black;
             Console.Write("Тип файла: ");
             Console.ForegroundColor = ConsoleColor.Red;
             Console.WriteLine("HTML");
-
-            Print("Имя: ", base.Name);
-            Print("Автор: ", base.Author);
-            Print("Ключевые слова: ", ParameterValue);
-            Print("Тематика: ", base.Theme);
-            Print("Путь к файлу: ", base.Path);
-            ParameterValue = "";
 
             if (this.DateOfCreation == "")
             {
@@ -78,7 +52,7 @@ namespace OOP_in_C_
                 ParameterValue = this.DateOfCreation;
             }
 
-            Print("Дата создания: ", ParameterValue);
+            base.Print("Дата создания: ", ParameterValue);
             ParameterValue = "";
 
             if (this.DateOfChange == "")
@@ -90,7 +64,7 @@ namespace OOP_in_C_
                 ParameterValue = this.DateOfChange;
             }
 
-            Print("Дата изменения: ", ParameterValue);
+            base.Print("Дата изменения: ", ParameterValue);
             ParameterValue = "";
 
             if (this.Size == "")
@@ -101,7 +75,7 @@ namespace OOP_in_C_
             {
                 ParameterValue = this.Size;
             }
-            Print("Размер файла: ", ParameterValue);
+            base.Print("Размер файла: ", ParameterValue);
             ParameterValue = "";
 
             Console.ResetColor();
